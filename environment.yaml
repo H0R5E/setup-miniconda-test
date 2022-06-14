@@ -3,7 +3,4 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  # Documentation
   - git
-  - sphinx
-  - sphinx-autodoc-typehints
