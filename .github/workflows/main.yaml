@@ -1,0 +1,15 @@
+name: Generate cygwin failure
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  job1:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: '3.9'
+          auto-activate-base: false
+      - run: |
+          conda info
