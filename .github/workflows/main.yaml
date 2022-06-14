@@ -7,8 +7,13 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: 'true'
       - uses: conda-incubator/setup-miniconda@v2
         with:
+          activate-environment: _snld3d
+          environment-file: environment.yaml
           python-version: '3.9'
           auto-activate-base: false
       - run: |
