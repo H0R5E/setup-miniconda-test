@@ -28,6 +28,3 @@ dependencies:
   - git
   - sphinx
   - sphinx-autodoc-typehints
-  - pip:
-    - insipid-sphinx-theme
-    - https://github.com/Holzhaus/sphinx-multiversion/archive/refs/heads/master.zip
